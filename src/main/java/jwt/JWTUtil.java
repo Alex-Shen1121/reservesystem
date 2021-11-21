@@ -1,6 +1,6 @@
 package jwt;
 
-import com.scy.model.UserInfoVo;
+import com.reserve.model.UserInfoVo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
