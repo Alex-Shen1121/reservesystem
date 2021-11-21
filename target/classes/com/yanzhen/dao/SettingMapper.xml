@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yanzhen.dao.SettingMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yanzhen.model.Setting">
+                    <id column="id" property="id"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="day" property="day"/>
+                    <result column="day_time" property="dayTime"/>
+                    <result column="counts" property="counts"/>
+                    <result column="dept_id" property="deptId"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, user_id, day, day_time, counts, dept_id
+        </sql>
+
+    <select id="querySettingListByUserId" parameterType="int"
+            resultType="com.yanzhen.model.Setting">
+      select * from setting s
+      where s.user_id=#{userId}
+    </select>
+
+    <delete id="deleteByUserId" parameterType="int" >
+        delete from setting  where user_id=#{userId}
+    </delete>
+
+    <select id="getCountsBySet" parameterType="com.yanzhen.model.Setting" resultType="int">
+        select counts from setting s
+        where s.`day`=#{day} and day_time=#{dayTime} and s.user_id=#{userId}
+    </select>
+
+</mapper>

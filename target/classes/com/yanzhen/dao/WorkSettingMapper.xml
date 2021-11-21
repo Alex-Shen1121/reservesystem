@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yanzhen.dao.WorkSettingMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yanzhen.model.WorkSetting">
+                    <id column="id" property="id"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="day" property="day"/>
+                    <result column="day_time" property="dayTime"/>
+                    <result column="counts" property="counts"/>
+                    <result column="dept_id" property="deptId"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, user_id, day, day_time, counts, dept_id
+        </sql>
+
+    <delete id="deleteWorkSettingByUserIdAndMonth">
+      delete from work_setting
+      where user_id=#{userId} and month(day)=#{month}
+    </delete>
+
+    <select id="findListByUserId" resultType="com.yanzhen.model.WorkVo">
+          select day,day_time as dayTime,counts as title from work_setting w
+          where w.user_id=#{userId} and month(day)=#{month} and year(day) =#{year}
+    </select>
+
+    <select id="findListByUserIdAndDay" resultType="com.yanzhen.model.WorkSetting">
+        select * from work_setting where user_id=#{userId} and day=#{day}
+    </select>
+
+    <select id="getUserOrderByIdAndDayAndDayTime" resultType="Integer">
+        select t2.n-t.m as num from
+(select count(*) as m from order_info s where s.user_id=#{userId} and s.`day`
+ like '%${day}%' and s.day_time=#{dayTime}) t,
+(select counts as n from work_setting w where w.user_id=#{userId} and w.`day`=#{day}
+and w.day_time=#{dayTime}) t2
+    </select>
+
+
+
+</mapper>

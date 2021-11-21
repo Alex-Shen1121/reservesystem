@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yanzhen.dao.RecordInfoMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yanzhen.model.RecordInfo">
+                    <id column="id" property="id"/>
+                    <result column="user_id" property="userId"/>
+                    <result column="patient_id" property="patientId"/>
+                    <result column="day" property="day"/>
+                    <result column="day_time" property="dayTime"/>
+                    <result column="desc_info" property="descInfo"/>
+                    <result column="recipel_info" property="recipelInfo"/>
+                    <result column="remarks" property="remarks"/>
+                    <result column="status" property="status"/>
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, user_id, patient_id, day, day_time, desc_info, recipel_info, remarks, status
+        </sql>
+
+
+    <select id="queryRecordInfoByPatientId" parameterType="int"
+            resultType="com.yanzhen.model.RecordInfo">
+      select * from record_info info where info.patient_id=#{patientId}
+      order by day_time desc
+    </select>
+
+</mapper>
