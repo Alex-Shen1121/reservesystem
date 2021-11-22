@@ -8,7 +8,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/reserve?useUnicode=true&amp&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
-    password: 123456
+    password: 12345678
   devtools: # 热部署
     livereload:
       enabled: true
@@ -18,9 +18,9 @@ spring:
   mvc:
     static-path-pattern: classpath:/static/
 mybatis-plus:
-  type-aliases-package: com.scy.model
+  type-aliases-package: com.reserve.model
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:com/scy/dao/*.xml
+  mapper-locations: classpath:com/reserve/dao/*.xml
 
