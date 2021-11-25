@@ -24,7 +24,7 @@ public class TestController {
     }
 
     @RequestMapping("/queryList")
-//    @CrossOrigin
+    @CrossOrigin
     public List<User> queryUserList() {
 //        System.out.println(user);
         List<User> list = userService.list();
@@ -33,7 +33,7 @@ public class TestController {
 
 
     @RequestMapping("user/queryAll")
-//    @CrossOrigin
+    @CrossOrigin
     public List<User> queryListAll(@RequestBody User user) {
         System.out.println(user);
         List<User> list = userService.list();
