@@ -18,9 +18,6 @@ import java.util.List;
  * <p>
  * 病人的预约记录 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo> implements IOrderInfoService {

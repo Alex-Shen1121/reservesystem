@@ -26,9 +26,6 @@ import java.util.Map;
  * <p>
  * 病人信息表 前端控制器
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Api(tags = {"病人信息表"})
 @RestController

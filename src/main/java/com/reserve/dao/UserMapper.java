@@ -11,9 +11,6 @@ import java.util.List;
  * <p>
  * 用户信息表 Mapper 接口
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Component("userDao")
 public interface UserMapper extends BaseMapper<User> {

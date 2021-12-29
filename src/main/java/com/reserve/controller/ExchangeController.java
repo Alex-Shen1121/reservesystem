@@ -21,14 +21,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * <p>
- * 调休记录信息  前端控制器
- * </p>
- *
- * @author kappy
- * @since 2021-02-02
- */
 @Api(tags = {"调休记录信息 "})
 @RestController
 @RequestMapping("/exchange")

@@ -11,9 +11,6 @@ import java.util.List;
  * <p>
  * 每月的自动生成排班设置，管理员可以根据生成的信息特殊处理 Mapper 接口
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Component("settingDao")
 public interface SettingMapper extends BaseMapper<Setting> {

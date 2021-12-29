@@ -14,9 +14,6 @@ import java.io.Serializable;
  * <p>
  * 科室
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

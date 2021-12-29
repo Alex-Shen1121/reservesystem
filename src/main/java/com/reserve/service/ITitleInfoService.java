@@ -8,9 +8,6 @@ import com.reserve.model.TitleInfo;
  * <p>
  * 医生职称信息表 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface ITitleInfoService extends IService<TitleInfo> {
 

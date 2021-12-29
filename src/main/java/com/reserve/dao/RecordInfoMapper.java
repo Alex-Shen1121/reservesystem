@@ -11,9 +11,6 @@ import java.util.List;
  * <p>
  * 就诊记录信息 Mapper 接口
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Component("recordInfoDao")
 public interface RecordInfoMapper extends BaseMapper<RecordInfo> {

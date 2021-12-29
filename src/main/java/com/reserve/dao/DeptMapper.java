@@ -11,9 +11,6 @@ import java.util.List;
  * <p>
  * 科室 Mapper 接口
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface DeptMapper extends BaseMapper<Dept> {
 

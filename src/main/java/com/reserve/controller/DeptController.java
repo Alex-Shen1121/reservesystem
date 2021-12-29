@@ -18,14 +18,6 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-/**
- * <p>
- * 科室 前端控制器
- * </p>
- *
- * @author kappy
- * @since 2021-02-02
- */
 @Api(tags = {"科室"})
 @RestController
 @RequestMapping("/dept")

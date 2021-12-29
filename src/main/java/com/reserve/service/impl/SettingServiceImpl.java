@@ -16,9 +16,6 @@ import java.util.List;
  * <p>
  * 每月的自动生成排班设置，管理员可以根据生成的信息特殊处理 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class SettingServiceImpl extends ServiceImpl<SettingMapper, Setting> implements ISettingService {

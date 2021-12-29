@@ -12,9 +12,6 @@ import java.util.List;
  * <p>
  * 用户信息表 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IUserService extends IService<User> {
 

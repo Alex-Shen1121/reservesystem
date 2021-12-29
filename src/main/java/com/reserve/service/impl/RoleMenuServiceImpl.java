@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
  * <p>
  * 角色菜单关联表 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class RoleMenuServiceImpl extends ServiceImpl<RoleMenuMapper, RoleMenu> implements IRoleMenuService {

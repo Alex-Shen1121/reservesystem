@@ -20,9 +20,6 @@ import java.util.List;
  * <p>
  * 就诊记录信息 前端控制器
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Api(tags = {"就诊记录信息"})
 @RestController

@@ -18,9 +18,6 @@ import java.util.List;
  * <p>
  * 病人信息表 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class PatientInfoServiceImpl extends ServiceImpl<PatientInfoMapper, PatientInfo> implements IPatientInfoService {

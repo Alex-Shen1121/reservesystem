@@ -19,9 +19,6 @@ import java.util.List;
  * <p>
  * 用户信息表 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {

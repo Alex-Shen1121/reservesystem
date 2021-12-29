@@ -16,9 +16,6 @@ import java.util.List;
  * <p>
  * 就诊记录信息 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class RecordInfoServiceImpl extends ServiceImpl<RecordInfoMapper, RecordInfo> implements IRecordInfoService {

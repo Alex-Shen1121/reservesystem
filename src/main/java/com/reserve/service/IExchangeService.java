@@ -9,9 +9,6 @@ import com.reserve.model.Exchange;
  * <p>
  * 调休记录信息  服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IExchangeService extends IService<Exchange> {
 

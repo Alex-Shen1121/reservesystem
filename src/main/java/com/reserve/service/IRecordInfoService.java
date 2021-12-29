@@ -10,9 +10,6 @@ import java.util.List;
  * <p>
  * 就诊记录信息 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IRecordInfoService extends IService<RecordInfo> {
 

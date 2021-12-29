@@ -10,9 +10,6 @@ import org.apache.ibatis.annotations.Param;
  * <p>
  * 病人信息表 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IPatientInfoService extends IService<PatientInfo> {
 

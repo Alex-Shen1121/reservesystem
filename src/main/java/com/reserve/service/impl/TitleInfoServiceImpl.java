@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
  * <p>
  * 医生职称信息表 服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class TitleInfoServiceImpl extends ServiceImpl<TitleInfoMapper, TitleInfo> implements ITitleInfoService {

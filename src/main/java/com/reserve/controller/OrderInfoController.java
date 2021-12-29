@@ -24,9 +24,6 @@ import java.util.*;
  * <p>
  * 病人的预约记录 前端控制器
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Api(tags = {"病人的预约记录"})
 @RestController

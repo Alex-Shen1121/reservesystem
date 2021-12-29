@@ -19,9 +19,6 @@ import java.util.*;
  * <p>
  * 每月的自动生成排班设置，管理员可以根据生成的信息特殊处理 前端控制器
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Api(tags = {"每月的自动生成排班设置，管理员可以根据生成的信息特殊处理"})
 @RestController

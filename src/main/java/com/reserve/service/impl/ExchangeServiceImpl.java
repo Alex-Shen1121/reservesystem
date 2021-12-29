@@ -18,9 +18,6 @@ import java.util.List;
  * <p>
  * 调休记录信息  服务实现类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Service
 public class ExchangeServiceImpl extends ServiceImpl<ExchangeMapper, Exchange> implements IExchangeService {

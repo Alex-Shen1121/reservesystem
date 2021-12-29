@@ -11,9 +11,6 @@ import java.util.List;
  * <p>
  * 病人信息表 Mapper 接口
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Component("patientDao")
 public interface PatientInfoMapper extends BaseMapper<PatientInfo> {

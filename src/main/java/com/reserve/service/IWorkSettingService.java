@@ -12,9 +12,6 @@ import java.util.List;
  * <p>
  * 医生排班的默认设置，用来初始化处理信息，主要按周1到周五排班配置，后续每月周一到周五均按照这个初始化医生上班时间 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IWorkSettingService extends IService<WorkSetting> {
     /**

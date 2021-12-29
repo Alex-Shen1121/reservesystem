@@ -9,9 +9,6 @@ import com.reserve.model.OrderInfo;
  * <p>
  * 病人的预约记录 服务类
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 public interface IOrderInfoService extends IService<OrderInfo> {
 

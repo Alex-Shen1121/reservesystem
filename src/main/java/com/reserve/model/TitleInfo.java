@@ -13,9 +13,6 @@ import java.io.Serializable;
  * <p>
  * 医生职称信息表
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

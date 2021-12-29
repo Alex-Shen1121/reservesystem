@@ -15,9 +15,6 @@ import java.util.Date;
  * <p>
  * 就诊记录信息
  * </p>
- *
- * @author kappy
- * @since 2021-02-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
